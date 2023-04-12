@@ -47,8 +47,6 @@ def save_labels_to_csv(data, labels):
 # Load the CSV file
 def load_csv_file(file):
     df = pd.read_csv(file)
-    if "label" not in df.columns:
-        df["label"] = None
     return df
 
 # Display a row from the CSV file
